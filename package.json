@@ -1,0 +1,17 @@
+{
+  "name": "portafoliojose",
+  "version": "1.0.0",
+  "description": "Portafolio desarrollador web",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "author": "JOSE LUIS ZUÑIGA <joseluis836@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
