@@ -1,0 +1,121 @@
+:root{
+    --yellow: #f5ba58;
+    --purple-medium: #313442;
+    --purple-dark: #232532;
+
+    --blue-sky: #00c6ff;
+    --blue-dark:#22476b;
+    --blue-light: #297acc;
+    --yellow-sky: #cc9629;;
+
+    --black: #000000;
+    --white: #FFFFFF;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;    
+}
+body{
+    font-size: 16px;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+/*Estilos generales*/
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h1, h2, h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+}
+p{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+/*Globals*/
+.container{
+    min-width: 280px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.mgt-25{
+    margin-top: 25px;
+}
+.mgb-25{
+    margin-bottom: 25px;
+}
+.pd-container{
+    padding: 20px;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-center{
+    text-align: center;
+}
+.borde-prueba{ /*Esto se debe borrar*/
+    border: 1px solid red;
+}
+
+
+/*HEADER*/
+.header_main {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_nav{
+    display: flex;
+    column-gap: 25px;
+}
+.header_nav a{
+    color: var(--yellow-sky);
+}
+
+
+/*MAIN*/
+
+.main.bg-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/eart_space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.main p{
+    color: var(--yellow-sky);
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0,0, 0.6);
+}
+
