@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoseZuñiga</title>
+    <link rel="stylesheet" href="../src/styles/normalize.css">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">  -->
-    
+    <script src="https://kit.fontawesome.com/f75337780c.js" crossorigin="anonymous"></script>   
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,51 +17,288 @@
 </head>
 <body>    
 
-    <header class="header_main .container pd-container bd-prueba">
-        <div class="logo">
-            <a href="#">
-                <img src="../src/assets/img/sc-nav-icon.png" alt="">
-            </a>
+  <header class="header  pd-container">
+    <div class="header_main .container">
+      <label for="check-menu">
+        <img src="../src/assets/img/sc-nav-icon.png" alt="logo menu">
+      </label>
+  
+      <input id="check-menu" class="check-menu" type="checkbox">
+      
+      <nav class="header_nav">
+        <a href="#">Home</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Más Experiencia</a>
+        <a href="#">Contactame</a>          
+      </nav>
+    </div>
+
+      
+  </header>
+
+  <main class="main .container mgy-container bg-img">
+    <div class="overlay pd-container">     
+
+      <section class="main_information mgt-25">
+          <picture class="main_img-container">
+              <img src="../src/assets/img/PerfilSinFondo.png" alt="">
+          </picture>
+
+          <h1>JOSÉ LÚIS ZúÑIGA</h1>
+          <h3 class="subtitle-main">Frontend Developer</h3>
+
+          <p class="legend-main">
+              I build web apps by meet your dreams
+          </p>    
+
+        <!-- <section class="main_text mgt-25">
+          <div class="main_actitudes">
+            <div class="actitud">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <p>Equipo</p>                            
+            </div>
+
+            <div class="actitud">
+              <i class="fa-solid fa-brain"></i>
+              <p>Planeación</p>            
+            </div>
+
+            <div class="actitud">
+              <i class="fa-solid fa-arrows-down-to-people"></i>
+              <p>Colaborativo</p>            
+            </div>
+
+            <div class="actitud">
+              <i class="fa-solid fa-dice"></i>
+              <p>Dinamico</p>            
+            </div>
+          </div>
+
+        </section> -->
+
+      </section>
+    </div>
+  </main>
+
+  <section class="sobre-mi mgy-container">
+    <div class="sobre_mi-container pd-container container">
+
+        <h2>Sobre mí</h2>
+        <p>
+          Hola, soy <span class="color-yellow">Jose Luis Zúliga</span>, soy un programador con múltiples experiencias en programación pero me desempeño como <span class="color-yellow">Frontend</span>.        
+        </p>
+
+        <p>
+          Cuento con otras experiencias como <span class="color-yellow">desarrollador de software</span> en aplicaciones de <span class="color-yellow">visión artificial</span>  para la automatización industrial y el desarrollo de <span class="color-yellow">drivers para microcontroladores.</span>
+        </p>
+
+        <p>
+          Mi profesión es <span class="color-yellow">ingeniero Físico</span> graduado de la Universidad del Cauca. Una carrera de conocimiento transversal que me permite adaptar mis conocimientos a diversas áreas, en especial la programación que es el área donde me gusta trabajar.
+        </p>
+
+        <div class="actitudes">
+          <div class="actitud">
+            <i class="fa-solid fa-users-gear"></i>            
+            <p>Trabajo en Equipo</p>                            
+          </div>
+
+          <div class="actitud">
+            <i class="fa-solid fa-brain"></i>
+            <p>Planeación</p>            
+          </div>
+
+          <div class="actitud">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p>Colaborativo</p>            
+          </div>
+
+          <div class="actitud">
+            <i class="fa-solid fa-dice"></i>
+            <p>Dinamico</p>            
+          </div>
+
+          <div class="actitud">
+            <i class="fa-solid fa-dna"></i>
+            <p>Evolutivo</p>            
+          </div>
+
+          
         </div>
-        <nav class="header_nav">
-            <a href="#">Home</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Más Experiencia</a>
-            <a href="#">Contactame</a>          
-        </nav>
-    </header>
 
-    <main class="main .container mgy-container bg-img bd-prueba">
-        <div class="overlay pd-container">            
+    </div>
+  </section>
 
-            <section class="main_information mgt-25">
-                <picture class="main_img-container">
-                    <img src="../src/assets/img/PerfilSinFondo.png" alt="">
-                </picture>
+  <section class="proyectos mgy-container">
+    <div class="proyectos-container pd-container container">
+      <h2>Proyectos</h2>
+      <p>
+        Estos son algunos de los proyectos en los que he trabajado puedes ver el código y la pagina. Puedes contactarme y hablar sobre ellos. 
+      </p>
+      <div class="proyectos-container">
 
-                <h1>JOSÉ LÚIS ZúÑIGA</h1>
-                <h3>Frontend Developer</h3>
+        <article class="proyecto">
+          <figure>
+            <img src="../src/assets/img/Captura desde 2022-06-10 16-49-53.png" alt="">
+          </figure>
+          <div class="text-proyecto">
+            <h3>Batata Bit</h3>
+            <p>
+              Landing page para consultar el precio de criptomonedas.
+            </p>
+            <p>Mobile/tablet/laptop</p>
+            <div class="tecnologias">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="codigo">
+              <i class="fa-brands fa-github-square"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </article>
 
-                <p class="text-center">
-                    I build web apps by meet your dreams
-                </p>
-            </section>
+        <article class="proyecto">
+          <figure>
+            <img src="../src/assets/img/Captura desde 2022-06-10 16-49-53.png" alt="">
+          </figure>
+          <div class="text-proyecto">
+            <h3>Batata Bit</h3>
+            <p>
+              Landing page para consultar el precio de criptomonedas.
+            </p>
+            <p>Mobile/tablet/laptop</p>
+            <div class="tecnologias">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="codigo">
+              <i class="fa-brands fa-github-square"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </article>
 
-            <section class="main_text mgt-25">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem aliquam fugiat fuga mollitia voluptates minima assumenda illo voluptatibus. Reprehenderit ea repudiandae minima animi laborum asperiores ad, eaque impedit omnis?
-                </p>
+        <article class="proyecto">
+          <figure>
+            <img src="../src/assets/img/Captura desde 2022-06-10 16-49-53.png" alt="">
+          </figure>
+          <div class="text-proyecto">
+            <h3>Batata Bit</h3>
+            <p>
+              Landing page para consultar el precio de criptomonedas.
+            </p>
+            <p>Mobile/tablet/laptop</p>
+            <div class="tecnologias">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="codigo">
+              <i class="fa-brands fa-github-square"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </article>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem aliquam fugiat fuga mollitia voluptates minima assumenda illo voluptatibus. Reprehenderit ea repudiandae minima animi laborum asperiores ad, eaque impedit omnis?
-                </p>
-            </section>
-        
-            
-        </div>
-    </main>
-    
+        <article class="proyecto">
+          <figure>
+            <img src="../src/assets/img/Captura desde 2022-06-10 16-49-53.png" alt="">
+          </figure>
+          <div class="text-proyecto">
+            <h3>Batata Bit</h3>
+            <p>
+              Landing page para consultar el precio de criptomonedas.
+            </p>
+            <p>Mobile/tablet/laptop</p>
+            <div class="tecnologias">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="codigo">
+              <i class="fa-brands fa-github-square"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <figure>
+            <img src="../src/assets/img/Captura desde 2022-06-10 16-49-53.png" alt="">
+          </figure>
+          <div class="text-proyecto">
+            <h3>Batata Bit</h3>
+            <p>
+              Landing page para consultar el precio de criptomonedas.
+            </p>
+            <p>Mobile/tablet/laptop</p>
+            <div class="tecnologias">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="codigo">
+              <i class="fa-brands fa-github-square"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <figure>
+            <img src="../src/assets/img/Captura desde 2022-06-10 16-49-53.png" alt="">
+          </figure>
+          <div class="text-proyecto">
+            <h3>Batata Bit</h3>
+            <p>
+              Landing page para consultar el precio de criptomonedas.
+            </p>
+            <p>Mobile/tablet/laptop</p>
+            <div class="tecnologias">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3"></i>
+              <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="codigo">
+              <i class="fa-brands fa-github-square"></i>
+              <i class="fa-solid fa-link"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <section class="habilidades">
+    <h2>Habilidades</h2>
+    <div class="habilidades-text ">
+      <p>
+        Para desarrllo/codificar, uso diferentes herramientas que permiten ejecutar mis trabajos de manera rápida y eficiente. Usandolas de acuerdo a las necesidades del proyecto. 
+      </p>
+    </div>
+    <div>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3"></i>
+      <i class="fa-brands fa-js-square"></i>
+      <i class="fa-brands fa-python"></i>
+      <i class="fa-brands fa-sass"></i>
+      <i class="fa-brands fa-gulp"></i>
+      <i class="fa-brands fa-react"></i>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contactame</h2>
+    <div>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-github-square"></i>
+      <i class="fa-brands fa-telegram"></i>
+      
+    </div>
+  </section>
    
 </body>
 </html>
