@@ -31,6 +31,7 @@ body{
 h1{
     font-size: 5rem;
     color: var(--white);
+    margin: 15px auto;
 }
 h2{
     font-size: 4rem;
@@ -63,7 +64,7 @@ a{
     margin-bottom: 25px;
 }
 .pd-container{
-    padding: 20px;
+    padding: 20px 25px;
 }
 .text-justify{
     text-align: justify;
@@ -149,7 +150,6 @@ img{
 }
 
 /*MAIN*/
-
 .main.bg-img{
     width: 100%;    
     background-image: url("../assets/img/eart_space.jpg");
@@ -165,7 +165,6 @@ img{
         height: calc(100vh - 80px);
     }
 }
-
 
 .main .overlay{
     width: 100%;
@@ -249,16 +248,17 @@ img{
     text-align: center;
 }
 
+.shadow{
+    box-shadow: 0px 15px 30px 7px rgba(0, 0,0, 0.25);
+}
+
 /*Sobre mi*/
 .sobre-mi{
     /* background-image: url('../assets/img/cuadriculafondo.png');
     background-position: center top; */
     
-    /* background: rgb(13, 13, 13);
-    background: linear-gradient(0deg, rgba(13,13,13,0.9) 1%, rgba(15,15,15,0.9) 37%); */
-
     background: rgb(2,50,98);
-    background: linear-gradient(0deg, rgba(2,50,98,1) 0%, rgba(37,37,37,1) 49%, rgba(10,13,16,1) 100%); 
+    background: linear-gradient(0deg, rgba(2,50,98,1) 0%, rgba(37,37,37,1) 49%, rgba(10,13,16,1) 100%);
 }
 
 .sobre_mi-container h2{
@@ -296,35 +296,30 @@ img{
 
 /*PROYECTOS*/
 .proyectos{
-    background: rgb(87,81,81);
-    background: linear-gradient(0deg, rgba(87,81,81,1) 0%, rgba(11,37,64,1) 48%, rgba(5,75,144,1) 100%);
+    /* background: rgb(87,81,81);
+    background: linear-gradient(0deg, rgba(87,81,81,1) 0%, rgba(11,37,64,1) 48%, rgba(5,75,144,1) 100%); */
 }
 .proyectos p{
-    color: var(--white);
+    /* color: var(--white); */
     text-align: justify;
+    margin-bottom: 20px;
 }
 
-.proyectos-container{
-    border: 1px solid red;
+.proyectos-container{    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
 }
-
-@media(min-width: 750px){
-    .proyectos-container{
-        border: 1px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        gap: 50px;
-    }
+.proyectos-card{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-
 .proyecto{
+    padding-bottom: 15px;
     max-width: 370px;
     display: flex;
     flex-direction: column;
@@ -334,6 +329,8 @@ img{
     overflow: hidden;
     background-color: var(--white);
     margin: 0 auto;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0,0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0,0, 0.22);
 }
 
 
@@ -350,11 +347,80 @@ img{
     text-align: center;
     color: var(--black);
 }
+.text-proyecto p:last-of-type {
+    color: var(--yellow-sky);
+    margin-bottom: 5px;
+}
+.codigo{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.codigo a{
+    width: auto;
+}
 
+.codigo i{
+    color: var(--blue-dark);
+    font-size: 3rem;
+    border: 2px solid var(--yellow-sky);
+    border-radius: 10px;
+}
+.codigo a:hover i{
+    color: var(--blue-dark);
+}
+.enlace-trabajo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.button{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--yellow-sky);
+}
 
+.button-black{
+    background-color: var(--black);
+    color: var(--white);
+}
+.button-blue{
+    background-color: var(--blue-light);
+    color: var(--white);
+}
 
+/*HABILIDADES*/
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
 
+.tecnologias-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.tecnologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
 
-
-
-
+.tecnologia i{
+    font-size: 3.5rem;
+}
