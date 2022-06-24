@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Portafolio desarrollador web Jose Luis ZúÑIGA. Autor: J.L. ZúÑIGA">
     <title>JoseZuñiga</title>
     <link rel="stylesheet" href="../src/styles/normalize.css">
 
@@ -17,24 +18,25 @@
 </head>
 <body>    
 
-  <header class="header  ">
+  <header class="header">
     <div class="header_main .container pd-container">
       <label for="check-menu">
-        <img src="../src/assets/img/sc-nav-icon.png" alt="logo menu">
+        <img src="../src/assets/img/logoJoseNombre.svg" alt="logo menu">
       </label>
   
       <input id="check-menu" class="check-menu" type="checkbox">
       
       <nav class="header_nav">
-        <a href="#">Home</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contactame</a>          
+        <a href="#Home">Home</a>
+        <a href="#Sobre-mi">Sobre mi</a>
+        <a href="#Habilidades">Habilidades</a>
+        <a href="#Proyectos">Proyectos</a>
+        <a href="#Contactame">Contactame</a>     
       </nav>
     </div>      
   </header>
 
-  <main class="main .container mgy-container bg-img">
+  <main class="main .container mgy-container bg-img" id="Home">
     <div class="overlay pd-container">     
 
       <section class="main_information mgt-25">
@@ -49,45 +51,20 @@
               I build web apps by meet your dreams
           </p>    
 
-        <!-- <section class="main_text mgt-25">
-          <div class="main_actitudes">
-            <div class="actitud">
-              <i class="fa-solid fa-handshake-angle"></i>
-              <p>Equipo</p>                            
-            </div>
-
-            <div class="actitud">
-              <i class="fa-solid fa-brain"></i>
-              <p>Planeación</p>            
-            </div>
-
-            <div class="actitud">
-              <i class="fa-solid fa-arrows-down-to-people"></i>
-              <p>Colaborativo</p>            
-            </div>
-
-            <div class="actitud">
-              <i class="fa-solid fa-dice"></i>
-              <p>Dinamico</p>            
-            </div>
-          </div>
-
-        </section> -->
-
       </section>
     </div>
   </main>
 
-  <section class="sobre-mi mgy-container shadow">
+  <section class="sobre-mi mgy-container shadow" id="Sobre-mi">
     <div class="sobre_mi-container pd-container container">
 
         <h2>Sobre mí</h2>
         <p>
-          Hola, soy <span class="color-yellow">Jose Luis Zúliga</span>, soy un programador con múltiples experiencias en programación pero me desempeño como <span class="color-yellow">Frontend</span>.        
+          Hola, soy <span class="color-yellow">Jose Luis Zúliga</span>, soy un programador con múltiples experiencias y me desempeño como <span class="color-yellow">Frontend</span>.        
         </p>
 
         <p>
-          Cuento con otras experiencias como <span class="color-yellow">desarrollador de software</span> en aplicaciones de <span class="color-yellow">visión artificial</span>  para la automatización industrial y el desarrollo de <span class="color-yellow">drivers para microcontroladores.</span>
+          Cuento con otras experiencias como <span class="color-yellow">desarrollador de software</span>, en aplicaciones de <span class="color-yellow">visión artificial</span>  para la automatización industrial y el desarrollo de <span class="color-yellow">drivers para microcontroladores.</span>
         </p>
 
         <p>
@@ -95,11 +72,7 @@
         </p>
 
         <div class="actitudes">
-          <div class="actitud">
-            <i class="fa-solid fa-users-gear"></i>            
-            <p>Trabajo en Equipo</p>                            
-          </div>
-
+          
           <div class="actitud">
             <i class="fa-solid fa-brain"></i>
             <p>Planeación</p>            
@@ -126,7 +99,62 @@
     </div>
   </section>
 
-  <section class="proyectos mgy-container shadow">
+  <section class="habilidades shadow" id="Habilidades">
+    <div class="habilidades-container pd-container container">
+      <h2>Habilidades</h2>
+
+      <div class="habilidades-text">
+        <p>
+          Para desarrllo/codificar, uso diferentes herramientas que permiten ejecutar mis trabajos de manera rápida y eficiente de acuerdo a las necesidades del proyecto. 
+        </p>
+      </div>
+
+      <div class="tecnologias-container">
+        <div class="tecnologia">
+          <i class="fa-brands fa-js-square"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="tecnologia">
+          <i class="fa-brands fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="tecnologia">
+          <i class="fa-brands fa-css3"></i>
+          <p>CSS3</p>
+        </div>
+  
+        <div class="tecnologia">
+          <i class="fa-brands fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="tecnologia">
+          <i class="fa-brands fa-sass"></i>
+          <p>SASS</p>
+        </div>
+        <div class="tecnologia">
+          <i class="fa-brands fa-gulp"></i>
+          <p>Gulp</p>
+        </div>
+        <div class="tecnologia">
+          <i class="fa-brands fa-react"></i>
+          <p>React</p>
+        </div>
+        
+        <div class="tecnologia">
+          <img src="../src/assets/img/webpack.svg" alt="webpack">
+          <p>WebPack</p>
+        </div>
+
+        <div class="tecnologia">
+          <img src="../src/assets/img/c++.svg" alt="webpack">
+          <p>C++</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section class="proyectos mgy-container shadow" id="Proyectos">
     <div class="proyectos-container pd-container container">
       <h2>Proyectos</h2>
       <p>
@@ -259,64 +287,43 @@
     </div>
   </section>
   
-  <section class="habilidades shadow">
-    <div class="habilidades-container pd-container container">
-      <h2>Habilidades</h2>
+  <section class="contactame" id="Contactame">
+    <div class="contactame-container pd-container container">
+      <h2>Contactame</h2>
+      <div class="sociales">
+        <div class="social">
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <p>Linkedin</p>
+        </div>
 
-      <div class="habilidades-text">
-        <p>
-          Para desarrllo/codificar, uso diferentes herramientas que permiten ejecutar mis trabajos de manera rápida y eficiente. Usandolas de acuerdo a las necesidades del proyecto. 
-        </p>
-      </div>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-github-square"></i></a>
+          <p>Github</p>
+        </div>
 
-      <div class="tecnologias-container">
-        <div class="tecnologia">
-          <i class="fa-brands fa-js-square"></i>
-          <p>JavaScript</p>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-telegram"></i></a>
+          <p>Telegram</p>
         </div>
-        <div class="tecnologia">
-          <i class="fa-brands fa-html5"></i>
-          <p>HTML5</p>
+
+        <div class="social">
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+          <p>Mail</p>
         </div>
-        <div class="tecnologia">
-          <i class="fa-brands fa-css3"></i>
-          <p>CSS3</p>
-        </div>
-  
-        <div class="tecnologia">
-          <i class="fa-brands fa-python"></i>
-          <p>Python</p>
-        </div>
-        <div class="tecnologia">
-          <i class="fa-brands fa-sass"></i>
-          <p>SASS</p>
-        </div>
-        <div class="tecnologia">
-          <i class="fa-brands fa-gulp"></i>
-          <p>Gulp</p>
-        </div>
-        <div class="tecnologia">
-          <i class="fa-brands fa-react"></i>
-          <p>React</p>
-        </div>
-        
-  
+
       </div>
     </div>
-  </section>
+  </section>   
 
-  <footer>
-    <h2>Contactame</h2>
-    <div>
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-github-square"></i>
-      <i class="fa-brands fa-telegram"></i>
-      
-    </div>
-    <div>
-      Todos los derechos reservados ©.
+  <footer class="footer">
+    <div class="footer-container pd-container container">
+      <a href="#Home" class="footer-logo">
+        <img src="../src/assets/img/logoJoseNombre.svg" alt="logo home">
+      </a>
+      <div class="footer-text">
+        <p>Todos los derechos reservados ©.</p>        
+      </div>
     </div>
   </footer>
-   
 </body>
 </html>
