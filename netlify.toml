@@ -1,0 +1,3 @@
+[build]
+  publish = "dist"
+  commnad = "npm run build"
