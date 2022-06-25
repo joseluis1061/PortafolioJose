@@ -1,13 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode:'production',
     entry: './src/index.js',
     output:{
         path: path.resolve(__dirname, './dist'),
-        filename: 'main.js', 
+        filename: '[name].[contenthash].js', 
         //assetModuleFilename:'assets/img/[hash][ext][query]'
     },
     
@@ -53,7 +55,17 @@ module.exports = {
             filename: 'index.html'
         }),
         //Css
-        new MiniCssExtractPlugin(),
-    ]
+        new MiniCssExtractPlugin({
+            filename:'assets/[name].[contenthash].css'
+        }),
+    ],
+
+    optimization: {
+        minimize: true,
+        minimizer: [
+          new CssMinimizerPlugin(),
+          new TerserPlugin()
+        ]
+    }
 
 }
