@@ -8,6 +8,7 @@ module.exports = {
     output:{
         path: path.resolve(__dirname, './dist'),
         filename: 'main.js', 
+        //assetModuleFilename:'assets/img/[hash][ext][query]'
     },
     
     resolve: {
@@ -31,7 +32,16 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     "css-loader"
                 ],
-              },
+            },
+            //Image
+            {
+                test: /\.(png|svg|jpg|jpeg)$/i,
+                type: 'asset/resource',
+                generator: {
+                  filename: 'assets/img/[hash][ext][query]',
+                },
+            },
+
         ]
     },
 
