@@ -42,8 +42,7 @@ module.exports = {
                 generator: {
                   filename: 'assets/img/[hash][ext][query]',
                 },
-            },
-
+            }
         ]
     },
 
@@ -52,7 +51,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: true,
             template: './public/index.html',
-            filename: 'index.html'
+            filename: './index.html'
         }),
         //Css
         new MiniCssExtractPlugin({
