@@ -1,11 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode:'development',
-    watch: true,
+    //watch: true,
     entry: './src/index.js',
     output:{
         path: path.resolve(__dirname, './dist'),
@@ -14,7 +14,7 @@ module.exports = {
     },
     
     resolve: {
-        extensions:['js']
+        extensions:['.js']
     },
 
     module: {
@@ -39,11 +39,10 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg)$/i,
                 type: 'asset/resource',
-                loader: "file-loader",
                 generator: {
                   filename: 'assets/img/[hash][ext][query]',
                 },
-            },
+            }
 
         ]
     },
@@ -59,7 +58,22 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename:'assets/[name].[contenthash].css'
         }),
+        //Copia de archivos
+        new CopyPlugin({
+            patterns:[
+                {
+                    from: path.resolve(__dirname, 'src', 'assets/img'),
+                    to: 'assets/img'
+                }
+            ]
+        }),
     ],
 
-
+    devServer: {
+		static: path.join(__dirname, 'dist'),
+		compress: true,
+		historyApiFallback: true,
+		port: 3000,
+		open: true,
+	}
 }
