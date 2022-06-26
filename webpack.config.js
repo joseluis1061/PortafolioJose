@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin');
+//const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
     mode:'production',
     entry: './src/index.js',
@@ -60,15 +60,16 @@ module.exports = {
         }),
         //Limpieza de archivos en production
         new CleanWebpackPlugin(),
+
         //Copia de archivos
-        new CopyPlugin({
-            patterns:[
-                {
-                    from: path.resolve(__dirname, 'src', 'assets/img'),
-                    to: 'assets/img'
-                }
-            ]
-        }),
+        // new CopyPlugin({
+        //     patterns:[
+        //         {
+        //             from: path.resolve(__dirname, 'src', 'assets/img'),
+        //             to: 'assets/img'
+        //         }
+        //     ]
+        // }),
     ],
 
     optimization: {
