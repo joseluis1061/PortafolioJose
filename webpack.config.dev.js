@@ -70,10 +70,15 @@ module.exports = {
     ],
 
     devServer: {
-		static: path.join(__dirname, 'dist'),
-		compress: true,
-		historyApiFallback: true,
-		port: 3000,
-		open: true,
+		static: 
+        {
+            directory: path.join(__dirname, "dist"),
+            watch: true,
+        },
+        watchFiles: path.join(__dirname, "./**"), //observa los cambios en todos nuestros archivos y actualiza el navegador
+        compress: true,
+        historyApiFallback: true,
+        port: 3006,
+        open: true, //Hace que se abra en el navegador automaticamente
 	}
 }

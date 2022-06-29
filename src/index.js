@@ -7,9 +7,12 @@ import webpack from './assets/img/webpack.svg';
 import c from './assets/img/c++.svg';
 import proyecto1 from './assets/img/batataBit.png';
 
+/* Imqgen logo Perfil */
+const logoPerfil = document.querySelector('.logo-header img');
+logoPerfil.src = logoJoseNombre;
 /* Imagen menu Header */
-const checkMenuImg = document.querySelector('.header_main label img');
-checkMenuImg.src = logoJoseNombre;
+// const checkMenuImg = document.querySelector('.header_main label img');
+// checkMenuImg.src = logoJoseNombre;
 
 /* Imagen perfil main */
 const mainImgPerfil = document.querySelector('.main_img-container img');
