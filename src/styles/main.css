@@ -363,6 +363,7 @@ section[id]{
  }
 .proyecto{
     padding-bottom: 15px;
+    width: 100%;
     max-width: 370px;
     height: 650px;
     display: flex;
