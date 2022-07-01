@@ -1,5 +1,6 @@
 import "./styles/main.css";
 import "./styles/normalize.css";
+import initialState from "./initialState";
 
 import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 import PerfilSinFondo from './assets/img/PerfilSinFondo.png';
@@ -8,6 +9,9 @@ import c from './assets/img/c++.svg';
 import proyecto1 from './assets/img/batataBit.png';
 import proyecto2 from './assets/img/laVeterinaria.png';
 import proyecto3 from './assets/img/pageFreelancer.png';
+
+
+
 /* Imqgen logo Perfil */
 const logoPerfil = document.querySelector('.logo-header img');
 logoPerfil.src = logoJoseNombre;
@@ -32,58 +36,134 @@ const footerLogo = document.querySelector('.footer-logo img');
 footerLogo.src = logoJoseNombre;
 
 /* Cards de proyecto*/ 
-function getCards(imgProyecto, tituloProyecto, descripcion){
-  const articleProyecto = document.createElement('ARTICLE');
-  articleProyecto.className = "proyecto";
+// function getCards(imgProyecto, tituloProyecto, descripcion){
+//   const articleProyecto = document.createElement('ARTICLE');
+//   articleProyecto.className = "proyecto";
 
-  const articleFigure = document.createElement('FIGURE');
-  const articleImg = document.createElement('IMG');
-  articleImg.src = imgProyecto;
-  articleImg.alt = "Imagen del proyecto";
-  articleFigure.append(articleImg);
+//   const articleFigure = document.createElement('FIGURE');
+//   const articleImg = document.createElement('IMG');
+//   articleImg.src = imgProyecto;
+//   articleImg.alt = "Imagen del proyecto";
+//   articleFigure.append(articleImg);
 
-  /*Texto proyectos */
-  const articleTextProyecto = document.createElement('DIV');
-  articleTextProyecto.className = "text-proyecto";
+//   /*Texto proyectos */
+//   const articleTextProyecto = document.createElement('DIV');
+//   articleTextProyecto.className = "text-proyecto";
 
-  const articleH3 = document.createElement('H3');
-  const textoH3 = document.createTextNode(tituloProyecto);
-  articleH3.append(textoH3);
+//   const articleH3 = document.createElement('H3');
+//   const textoH3 = document.createTextNode(tituloProyecto);
+//   articleH3.append(textoH3);
 
-  const articleP1 = document.createElement('P');
-  const textoP1 = document.createTextNode(descripcion)
-  articleP1.append(textoP1);
+//   const articleP1 = document.createElement('P');
+//   const textoP1 = document.createTextNode(descripcion)
+//   articleP1.append(textoP1);
 
-  const articleP2 = document.createElement('P');
-  const textoP2 = document.createTextNode("Mobile / tablet / laptop")
-  articleP2.append(textoP2);
+//   const articleP2 = document.createElement('P');
+//   const textoP2 = document.createTextNode("Mobile / tablet / laptop")
+//   articleP2.append(textoP2);
 
-  /*Enlaces */
-  const articleEnlaceTrabajo = document.createElement('DIV');
-  articleEnlaceTrabajo.className = "enlace-trabajo";
+//   /*Enlaces */
+//   const articleEnlaceTrabajo = document.createElement('DIV');
+//   articleEnlaceTrabajo.className = "enlace-trabajo";
 
-  const articleButtonBlack = document.createElement('BUTTON');
-  articleButtonBlack.className = "button button-black";
-  const textoButtonBlack = document.createTextNode("Página");
-  articleButtonBlack.append(textoButtonBlack);
+//   const articleButtonBlack = document.createElement('BUTTON');
+//   articleButtonBlack.className = "button button-black";
+//   const textoButtonBlack = document.createTextNode("Página");
+//   articleButtonBlack.append(textoButtonBlack);
 
-  const articleButtonBlue = document.createElement('BUTTON');
-  articleButtonBlue.className = "button button-blue";
-  const textoButtonBlue = document.createTextNode("Código");
-  articleButtonBlue.append(textoButtonBlue);
+//   const articleButtonBlue = document.createElement('BUTTON');
+//   articleButtonBlue.className = "button button-blue";
+//   const textoButtonBlue = document.createTextNode("Código");
+//   articleButtonBlue.append(textoButtonBlue);
 
-  /* Union de elementos */
-  articleEnlaceTrabajo.append(articleButtonBlack);
-  articleEnlaceTrabajo.append(articleButtonBlue);
+//   /* Union de elementos */
+//   articleEnlaceTrabajo.append(articleButtonBlack);
+//   articleEnlaceTrabajo.append(articleButtonBlue);
 
-  articleTextProyecto.append(articleH3, articleP1, articleP2, articleEnlaceTrabajo);
+//   articleTextProyecto.append(articleH3, articleP1, articleP2, articleEnlaceTrabajo);
 
-  articleProyecto.append(articleFigure, articleTextProyecto);
+//   articleProyecto.append(articleFigure, articleTextProyecto);
+
+//   const proyectosCard = document.querySelector('.proyectos-card');
+//   proyectosCard.append(articleProyecto);
+// }
+
+function getCards(){
+
+  const cards = initialState.map(card =>{
+    const articleProyecto = document.createElement('ARTICLE');
+    articleProyecto.className = "proyecto";
+  
+    const articleFigure = document.createElement('FIGURE');
+
+    articleFigure.style.backgroundImage =  `url(${card.image})`;
+  
+    articleFigure.style.backgroundPosition = "center";
+    articleFigure.style.backgroundRepeat = "no-repeat";
+    articleFigure.style.backgroundSize = "cover";
+    
+    // const articleImg = document.createElement('IMG');
+    // articleImg.src = card.image;
+    // articleImg.alt = "Imagen del proyecto";
+    // articleFigure.append(articleImg);
+  
+    /*Texto proyectos */
+    const articleTextProyecto = document.createElement('DIV');
+    articleTextProyecto.className = "text-proyecto";
+
+    const proyectoEncabezado = document.createElement('DIV');
+    proyectoEncabezado.className = "proyecto-encabezado";
+  
+    const articleH3 = document.createElement('H3');
+    const textoH3 = document.createTextNode(card.title);
+    articleH3.append(textoH3);
+  
+    const articleP1 = document.createElement('P');
+    const textoP1 = document.createTextNode(card.description);
+    articleP1.append(textoP1);
+  
+    const articleP2 = document.createElement('P');
+    const textoP2 = document.createTextNode("Mobile / tablet / laptop")
+    articleP2.append(textoP2);
+
+    proyectoEncabezado.append(articleH3, articleP1, articleP2);
+  
+    /*Enlaces */
+    const articleEnlaceTrabajo = document.createElement('DIV');
+    articleEnlaceTrabajo.className = "enlace-trabajo";
+  
+    const articleButtonBlack = document.createElement('BUTTON');
+    articleButtonBlack.className = "button button-black";
+    const textoButtonBlack = document.createTextNode("Página");
+    const linkPage = document.createElement('A');
+    linkPage.href = card.urlPage;
+    linkPage.target="_blank";
+    linkPage.append(textoButtonBlack);
+    articleButtonBlack.append(linkPage);
+
+    
+  
+    const articleButtonBlue = document.createElement('BUTTON');
+    articleButtonBlue.className = "button button-blue";
+    const textoButtonBlue = document.createTextNode("Código");
+    const linkCode = document.createElement('A');
+    linkCode.href = card.urlCode;
+    linkCode.target="_blank";
+    linkCode.append(textoButtonBlue);
+    articleButtonBlue.append(linkCode);
+  
+    /* Union de elementos */
+    articleEnlaceTrabajo.append(articleButtonBlack);
+    articleEnlaceTrabajo.append(articleButtonBlue);
+  
+    articleTextProyecto.append(articleH3, articleP1, articleP2, articleEnlaceTrabajo);
+  
+    articleProyecto.append(articleFigure, articleTextProyecto);
+  
+    return articleProyecto
+  });
 
   const proyectosCard = document.querySelector('.proyectos-card');
-  proyectosCard.append(articleProyecto);
+  proyectosCard.append(...cards);
 }
-
-getCards(proyecto2, 'La Veterinaria', 'Gestion de citas para pacientes de una veterinaria');
-getCards(proyecto3, 'FreeLancer Page', 'Landing Page para un desarrollador FreeLancer');
-getCards(proyecto1, 'Batata Bit', 'Landind Page para obtener los precios de critomonedas');
+getCards()

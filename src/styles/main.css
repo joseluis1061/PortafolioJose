@@ -333,11 +333,13 @@ section[id]{
     line-height: 1;
 }
 /*PROYECTOS*/
+
 @media(min-width: 450px){
     .proyectos {
         min-height: 100vh;
     }
 }
+
 .proyectos p{
     /* color: var(--white); */
     text-align: justify;
@@ -356,9 +358,13 @@ section[id]{
     align-items: center;
     gap: 30px;
 }
+.proyectos-card:last-of-type{
+    margin-bottom: 15px;
+ }
 .proyecto{
     padding-bottom: 15px;
     max-width: 370px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,12 +376,23 @@ section[id]{
     box-shadow: 5px 5px 30px 7px rgba(0, 0,0, 0.25),
     -5px -5px 30px 7px rgba(0, 0,0, 0.22);
 }
-.text-proyecto{
+.proyecto figure{
+    height: 50%;
+    width: 100%;
+}
+
+.proyecto .text-proyecto{
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 15px;
+}
+.proyecto-encabezado {
+    height: 85%;
+    align-items: flex-start;
+
 }
 .text-proyecto h3{
     color: var(--yellow-sky);
@@ -407,6 +424,7 @@ section[id]{
     color: var(--blue-dark);
 }
 .enlace-trabajo{
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,10 +444,14 @@ section[id]{
 
 .button-black{
     background-color: var(--black);
+}
+.button-black a{
     color: var(--white);
 }
 .button-blue{
     background-color: var(--blue-light);
+}
+.button-blue a{
     color: var(--white);
 }
 
@@ -449,15 +471,6 @@ section[id]{
 .habilidades-text p{
     text-align: justify;
 }
-/* .tecnologias-container{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-} */
 @media(min-width: 300px){
     .tecnologias-container{
         display: grid;
