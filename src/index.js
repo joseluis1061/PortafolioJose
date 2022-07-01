@@ -6,9 +6,7 @@ import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 import PerfilSinFondo from './assets/img/PerfilSinFondo.png';
 import webpack from './assets/img/webpack.svg';
 import c from './assets/img/c++.svg';
-import proyecto1 from './assets/img/batataBit.png';
-import proyecto2 from './assets/img/laVeterinaria.png';
-import proyecto3 from './assets/img/pageFreelancer.png';
+
 
 
 
