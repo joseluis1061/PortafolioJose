@@ -453,6 +453,7 @@ section[id]{
 }
 .button-blue{
     background-color: var(--blue-light);
+    color: var(--white);
 }
 .button-blue a{
     color: var(--white);
@@ -498,7 +499,59 @@ section[id]{
     padding: 0;
 }
 
+/*Formulario Email*/
+.form__contacto{
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blanco);
+}
 
+.campo{
+    width: 100%;
+}
+.campo__field{
+    width: 100%;
+    padding: 5px;
+}
+.campo__field-textarea{
+    height: 20rem;
+}
+.boton-mail{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.campo__label{
+    font-size: 2rem;       
+}
+@media(min-width: 768px){
+    .campo{
+        display: flex;
+        margin-bottom: 2rem;        
+    }
+    .campo__label{
+        flex: 0 0 9rem;
+        text-align: left;
+        margin-right: 1rem;        
+    }
+    .campo__field{
+        flex: 1;
+    }
+    .campo:last-of-type{
+        width: 100%;
+        justify-content: center;
+        margin-left: 3rem;
+    }
+    .button-mail{       
+        display: inline-block;
+        width: 30%;
+        justify-self: center;
+        
+    }
+}
 /*FOOTER*/
 .contactame-container{
     display: flex;

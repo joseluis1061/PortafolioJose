@@ -22,7 +22,7 @@
     <div class="header_main .container pd-container">
 
       <figure class="logo-header">
-        <img alt="logo Perfil">
+        <a href="#Home"><img alt="logo Perfil"></a>        
       </figure>
       
 
@@ -200,6 +200,7 @@
   <section class="contactame" id="Contactame">
     <div class="contactame-container pd-container container">
       <h2>Contactame</h2>
+      
       <div class="sociales">
         <div class="social">
           <a href="https://www.linkedin.com/in/jose-zu%C3%B1iga-2b174b131/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -216,12 +217,31 @@
           <p>Telegram</p>
         </div>
 
-        <div class="social">
-          <a href=""><i class="fa-solid fa-envelope" target="_blank"></i></a>
+        <label class="social" for="name">
+          <i class="fa-solid fa-envelope" target="_blank"></i>
           <p>Mail</p>
+        </label>
+      </div>
+
+      <form class="form__contacto" action="#">
+        <div class="campo">
+            <label class="campo__label" for="name">Nombre</label>
+            <input class="campo__field" type="text" id="name">
+        </div>
+        <div class="campo">
+            <label class="campo__label" for="email">Email</label>
+            <input class="campo__field" type="text" id="email">
         </div>
 
-      </div>
+        <div class="campo">
+            <label class="campo__label" for="email">Mensaje</label>
+            <textarea class="campo__field campo__field-textarea" type="text" id="textarea">
+            </textarea>
+        </div>
+        <div class="campo">
+            <input class="button button-blue button-mail" type="submit" name="Enviar" id="enviar" value="Enviar">
+        </div>            
+       </form>
     </div>
   </section>   
 
