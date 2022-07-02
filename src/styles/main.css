@@ -11,19 +11,21 @@
     --black: #000000;
     --white: #FFFFFF;
 }
-*,*::after,*::before{
+
+html{
     box-sizing: border-box;
+    font-size: 62.5%;    
+}
+*,*::after,*::before{    
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
-html{
-    font-size: 62.5%;
-    font-family: 'Roboto Flex', sans-serif;
-    font-family: 'Yanone Kaffeesatz', sans-serif;    
-}
+
 body{
-    font-size: 16px;
-    font-size: 2rem;
+    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
