@@ -508,14 +508,13 @@ section[id]{
     justify-content: center;
     background-color: var(--blanco);
 }
-
-.campo{
-    width: 100%;
-    border: none;
+.campo__label{
+    font-size: 2rem;    
 }
 .campo__field{
     width: 100%;
     padding: 5px;
+    margin-bottom: 1rem;  
 }
 .campo__field-textarea{
     height: 20rem;
@@ -526,26 +525,9 @@ section[id]{
     display: inline-block;
     padding: 10px 25px;
 }
-.campo__label{
-    font-size: 2rem;       
-}
+
 @media(min-width: 768px){
-    .campo{
-        display: flex;
-        margin-bottom: 2rem;        
-    }
-    .campo__label{
-        flex: 0 0 9rem;
-        text-align: left;
-        margin-right: 1rem;        
-    }
-    .campo__field{
-        flex: 1;
-    }
-    .campo:last-of-type{
-        width: 100%;
-        justify-content: center;
-    }
+
     .button-mail{       
         display: inline-block;
         max-width: 30%;        
