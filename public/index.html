@@ -223,7 +223,10 @@
         </label>
       </div>
 
-      <form class="form__contacto" data-netlify="true">
+      <form class="form__contacto" name="form__contacto" method="POST" data-netlify="true">
+
+        <label for="telefono">telefono</label>
+        <input type="tel" name="telefono" id="telefono">
         <div class="campo">
             <label class="campo__label" for="name">Nombre</label>
             <input class="campo__field" type="text" id="name">
@@ -241,7 +244,7 @@
         <div class="campo">
             <input class="button button-blue button-mail" type="submit" name="Enviar" id="enviar" value="Enviar">
         </div>            
-       </form>
+      </form>
     </div>
   </section>   
 
