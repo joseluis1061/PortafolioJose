@@ -225,25 +225,24 @@
 
       <form class="form__contacto" name="form__contacto" method="POST" data-netlify="true">
 
-        <label for="telefono">telefono</label>
-        <input type="tel" name="telefono" id="telefono">
-        <div class="campo">
-            <label class="campo__label" for="name">Nombre</label>
-            <input class="campo__field" type="text" id="name">
-        </div>
-        <div class="campo">
-            <label class="campo__label" for="email">Email</label>
-            <input class="campo__field" type="text" id="email">
-        </div>
+        <fieldset class="campo">
+          <label class="campo__label" for="name">Nombre</label>
+          <input class="campo__field" type="text" id="name" placeholder="Nombre">
+        </fieldset>
 
-        <div class="campo">
-            <label class="campo__label" for="email">Mensaje</label>
-            <textarea class="campo__field campo__field-textarea" type="text" id="textarea">
-            </textarea>
-        </div>
-        <div class="campo">
-            <input class="button button-blue button-mail" type="submit" name="Enviar" id="enviar" value="Enviar">
-        </div>            
+        <fieldset class="campo">
+          <label class="campo__label" for="email">Email</label>
+          <input class="campo__field" type="text" id="email" placeholder="Email">
+        </fieldset>
+
+        <fieldset class="campo">
+          <label class="campo__label" for="email">Mensaje</label>
+          <textarea class="campo__field campo__field-textarea" type="text" id="textarea" placeholder="Mensaje">
+          </textarea>
+        </fieldset>
+
+        <input class="button button-blue button-mail" type="submit" name="Enviar" id="enviar" value="Enviar">
+        
       </form>
     </div>
   </section>   
