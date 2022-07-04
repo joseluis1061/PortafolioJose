@@ -511,6 +511,7 @@ section[id]{
 
 .campo{
     width: 100%;
+    border: none;
 }
 .campo__field{
     width: 100%;
@@ -519,8 +520,9 @@ section[id]{
 .campo__field-textarea{
     height: 20rem;
 }
-.boton-mail{
-    width: 100%;
+.button-mail{
+    width: 95%;
+    align-self: center;
     display: inline-block;
     padding: 10px 25px;
 }
@@ -543,13 +545,10 @@ section[id]{
     .campo:last-of-type{
         width: 100%;
         justify-content: center;
-        margin-left: 3rem;
     }
     .button-mail{       
         display: inline-block;
-        width: 30%;
-        justify-self: center;
-        
+        max-width: 30%;        
     }
 }
 /*FOOTER*/
