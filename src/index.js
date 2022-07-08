@@ -2,6 +2,7 @@ import "./styles/main.css";
 import "./styles/normalize.css";
 import initialState from "./initialState";
 import Header from "./header";
+import Main from "./main";
 
 import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 import PerfilSinFondo from './assets/img/PerfilSinFondo.png';
@@ -9,19 +10,9 @@ import webpack from './assets/img/webpack.svg';
 import c from './assets/img/c++.svg';
 
 
-Header()
 
-/* Imqgen logo Perfil */
-// const logoPerfil = document.querySelector('.logo-header img');
-// logoPerfil.src = logoJoseNombre;
-/* Imagen menu Header */
-// const checkMenuImg = document.querySelector('.header_main label img');
-// checkMenuImg.src = logoJoseNombre;
-
-/* Imagen perfil main */
-const mainImgPerfil = document.querySelector('.main_img-container img');
-mainImgPerfil.src = PerfilSinFondo;
-
+Header();
+Main();
 /* Imagen Webpack */
 const webpackImg = document.querySelector('.webpack');
 webpackImg.src = webpack;
