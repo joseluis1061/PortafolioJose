@@ -3,6 +3,7 @@ import "./styles/normalize.css";
 import initialState from "./initialState";
 import Header from "./header";
 import Main from "./main";
+import SobreMi from "./sobreMI";
 
 import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 import PerfilSinFondo from './assets/img/PerfilSinFondo.png';
@@ -13,6 +14,7 @@ import c from './assets/img/c++.svg';
 
 Header();
 Main();
+SobreMi();
 /* Imagen Webpack */
 const webpackImg = document.querySelector('.webpack');
 webpackImg.src = webpack;
@@ -130,8 +132,6 @@ function getCards(){
     linkPage.target="_blank";
     linkPage.append(textoButtonBlack);
     articleButtonBlack.append(linkPage);
-
-    
   
     const articleButtonBlue = document.createElement('BUTTON');
     articleButtonBlue.className = "button button-blue";
