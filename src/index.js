@@ -4,6 +4,7 @@ import initialState from "./initialState";
 import Header from "./header";
 import Main from "./main";
 import SobreMi from "./sobreMI";
+import Habilidades from "./habilidades";
 
 import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 import PerfilSinFondo from './assets/img/PerfilSinFondo.png';
@@ -15,6 +16,7 @@ import c from './assets/img/c++.svg';
 Header();
 Main();
 SobreMi();
+Habilidades();
 /* Imagen Webpack */
 const webpackImg = document.querySelector('.webpack');
 webpackImg.src = webpack;
