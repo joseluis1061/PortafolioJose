@@ -21,11 +21,10 @@ const Header = () => {
 
   const labelMenu = document.createElement('LABEL');
   labelMenu.htmlFor = 'check-menu';
+  labelMenu.className = 'label-menu';
   const faBars = document.createElement('I');
   faBars.className = 'fa-solid fa-bars';
   labelMenu.append(faBars);
-  faBars.style.color= 'var(--white)';
-  faBars.style.fontSize = '3.5rem';
 
   const checkMenu = document.createElement('INPUT');
   checkMenu.id = 'check-menu';  
