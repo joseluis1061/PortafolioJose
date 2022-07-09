@@ -60,8 +60,6 @@ const formValidation = (id, parrafoError) =>{
 
 };
 
-
-
 const Formulario = ()=>{
   const formulario = document.createElement('FORM');
   formulario.className = 'form__contacto';
