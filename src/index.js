@@ -14,5 +14,5 @@ Main();
 SobreMi();
 Habilidades();
 Proyectos();
-Contactame();
+// Contactame();
 Footer();
