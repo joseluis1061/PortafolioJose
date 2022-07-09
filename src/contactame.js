@@ -48,6 +48,20 @@ const getSociales = () => {
   return sociales;
 };
 
+const formValidation = (id, parrafoError) =>{    
+
+  if (id.value.trim() === "") {    
+    id.style.border = "2px solid red";
+    parrafoError.innerHTML = 'Todos los campos * son obligatorios';
+  } else {
+    id.style.border = "2px solid green";
+    parrafoError.innerHTML = '';
+  }
+
+};
+
+
+
 const Formulario = ()=>{
   const formulario = document.createElement('FORM');
   formulario.className = 'form__contacto';
@@ -55,6 +69,13 @@ const Formulario = ()=>{
   formulario.method = 'POST';
   formulario.dataNetlify = true;
   formulario.setAttribute('data-netlify', 'true');
+
+  formulario.addEventListener('submit', (e)=>{
+    e.preventDefault();    
+    formValidation(inputNombre, parrafoError);
+    formValidation(inputEmail, parrafoError);
+    formValidation(inputMesage, parrafoError);
+  });
 
   const campoNombre = document.createElement('LABEL');
   campoNombre.className = 'campo__label';
@@ -66,7 +87,7 @@ const Formulario = ()=>{
   inputNombre.setAttribute('type', 'text');
   inputNombre.id = 'name';
   inputNombre.name='name';
-  inputNombre.ariaPlaceholder = 'Nombre';
+  inputNombre.placeholder = 'Nombre';
   campoNombre.append(inputNombre);
 
   const campoEmail = document.createElement('LABEL');
@@ -79,7 +100,7 @@ const Formulario = ()=>{
   inputEmail.setAttribute('type', 'text');
   inputEmail.id = 'email';
   inputEmail.name='email';
-  inputEmail.ariaPlaceholder = '*Email';
+  inputEmail.placeholder = '*Email';
   campoEmail.append(inputEmail);
 
   const campoMesage = document.createElement('LABEL');
@@ -92,7 +113,7 @@ const Formulario = ()=>{
   inputMesage.setAttribute('type', 'text');
   inputMesage.id = 'textarea';
   inputMesage.name='mesage';
-  inputMesage.ariaPlaceholder = 'Mensaje...';
+  inputMesage.placeholder = 'Mensaje...';
   campoMesage.append(inputMesage);
 
   const buttonEmail = document.createElement('BUTTON');
@@ -102,7 +123,11 @@ const Formulario = ()=>{
   texto = document.createTextNode('Enviar');
   buttonEmail.append(texto)
 
-  formulario.append(campoNombre, campoEmail, campoMesage, buttonEmail);
+  const parrafoError = document.createElement('P');
+  parrafoError.className = 'text-center';
+  parrafoError.style.color = 'red';
+
+  formulario.append(campoNombre, campoEmail, campoMesage, parrafoError, buttonEmail);
   return formulario;
 };
 
