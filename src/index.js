@@ -5,10 +5,9 @@ import Header from "./header";
 import Main from "./main";
 import SobreMi from "./sobreMI";
 import Habilidades from "./habilidades";
-import Contactame from  "./contactame";
-
-import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 import Proyectos from "./proyectos";
+import Contactame from  "./contactame";
+import Footer from "./footer";
 
 Header();
 Main();
@@ -16,11 +15,4 @@ SobreMi();
 Habilidades();
 Proyectos();
 Contactame();
-
-/* Imagen logo footer */
-const footerLogo = document.querySelector('.footer-logo img');
-footerLogo.src = logoJoseNombre;
-
-
-
-
+Footer();
