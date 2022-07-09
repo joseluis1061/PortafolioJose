@@ -372,7 +372,8 @@ section[id]{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--black);
     overflow: hidden;
     background-color: var(--white);
     margin: 0 auto;
