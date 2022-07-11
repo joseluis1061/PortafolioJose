@@ -1,10 +1,18 @@
 /*Información de proyectos para el portafolio */
+import confMerge from './assets/img/confMerge.png';
 import laVeterinaria from './assets/img/laVeterinaria.png';
 import batataBit from './assets/img/batataBit.png';
 import blogDeCafe from './assets/img/blogDeCafe.png';
 import pageFreelancer from './assets/img/pageFreelancer.png';
 
 const initialState = [
+  {
+    image: confMerge, 
+    title: 'Conf Merge', 
+    description: 'Tienda en línea donde puedes pagar vía Paypal. De manera facíl podras ver tu geolocalización de llegada de tú producto',
+    urlPage: 'https://store-merge.web.app/',
+    urlCode: 'https://github.com/joseluis1061/conf-merch'
+  },
   {
     image: laVeterinaria, 
     title: 'La Veterinaria', 
