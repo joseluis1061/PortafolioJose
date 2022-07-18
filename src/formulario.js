@@ -1,14 +1,14 @@
-
-
+//Form Component
 const formValidation = (id, parrafoError) =>{
   if (id.value.trim() === "") {    
     id.style.border = "2px solid red";
     parrafoError.innerHTML = 'Todos los campos * son obligatorios';
+    return false;
   } else {
     id.style.border = "2px solid green";
     parrafoError.innerHTML = '';
+    return true;
   }
-
 };
 
 const Formulario = ()=>{
@@ -21,9 +21,23 @@ const Formulario = ()=>{
 
   formulario.addEventListener('submit', (e)=>{
     e.preventDefault();    
-    formValidation(inputNombre, parrafoError);
-    formValidation(inputEmail, parrafoError);
-    formValidation(inputMesage, parrafoError);
+    let error1 = formValidation(inputNombre, parrafoError);
+    let error2 =formValidation(inputEmail, parrafoError);
+    let error3 =formValidation(inputMesage, parrafoError);
+
+    if(error1=== true | error2=== true | error3=== true){
+      console.log('Intento de envio');
+      let formData = new FormData(formulario);
+      fetch("/", {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/x-www-form-urlencoded" 
+        },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
+    }
   });
 
   const campoNombre = document.createElement('LABEL');

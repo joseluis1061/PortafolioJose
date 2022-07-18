@@ -1,5 +1,5 @@
 import socialesList from "./socialesList";
-import Formulario from "./netlify/functions/formulario";
+import Formulario from "./formulario";
 
 const getSociales = () => {
 
