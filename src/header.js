@@ -4,6 +4,12 @@ import "./styles/normalize.css";
 
 import logoJoseNombre from './assets/img/logoJoseNombre.svg';
 
+
+const changeCheck = () => {
+  const checkMenu = document.querySelector('#check-menu');
+  checkMenu.checked = false;
+}
+
 const Header = () => {
   const header = document.querySelector('.header');
 
@@ -34,10 +40,13 @@ const Header = () => {
 
   const headerNav = document.createElement('NAV');
   headerNav.className = 'header_nav';
+  headerNav.addEventListener('click',changeCheck)
+  
   const aHome = document.createElement('A');
   aHome.href = '#Home';
   let texto = document.createTextNode('HOME');
   aHome.appendChild(texto);
+
   const aSobreMi = document.createElement('A');
   aSobreMi.href = '#Sobre-mi';
   texto = document.createTextNode('Sobre mí');
