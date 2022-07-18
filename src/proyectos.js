@@ -110,10 +110,6 @@ const Proyectos = ()=>{
   proyectosContainer.append(proyectosH2, proyectosP, proyectosCard)
 
   proyectos.append(proyectosContainer);
-
-  
-
-
   return proyectos;
 };
 
