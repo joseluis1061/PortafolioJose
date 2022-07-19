@@ -1,7 +1,8 @@
 const socialesList = [
   {
     type: 'DIV',
-    href : 'https://www.linkedin.com/in/jose-zu%C3%B1iga-2b174b131/',
+    href : 'https://www.linkedin.com/in/jose-luis-zu%C3%B1iga-2b174b131?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3qt18vcBTeSUH6nsPPwtRQ%3D%3D',
+    
     iClass: 'fa-brands fa-linkedin',
     text: 'Linkedin'
   },

@@ -36,7 +36,7 @@ const formValidation= (event) =>{
         errorText.innerHTML = 'Enviado';
         errorText.style.color = 'green';
       })
-      .catch((error) => alert(error));   
+      .catch((error) => alert('Ha ocurrido un error con le mensaje. Intentalo de nuevo: '+error));   
 
       setTimeout(() =>{
         errorText.innerHTML = '';
