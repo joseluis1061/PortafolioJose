@@ -11,6 +11,13 @@ const formValidation = (id, parrafoError) =>{
   }
 };
 
+const handleSubmit = (event, inputNombre,inputEmail,inputMesage, parrafoError) => {
+  let error1 = formValidation(inputNombre, parrafoError);
+  let error2 =formValidation(inputEmail, parrafoError);
+  let error3 =formValidation(inputMesage, parrafoError);
+  event.preventDefault();
+};
+
 const Formulario = ()=>{
   const formulario = document.createElement('FORM');
   formulario.className = 'form__contacto';
@@ -18,27 +25,6 @@ const Formulario = ()=>{
   formulario.method = 'POST';
   formulario.dataNetlify = true;
   formulario.setAttribute('data-netlify', 'true');
-
-  formulario.addEventListener('submit', (e)=>{
-    e.preventDefault();    
-    let error1 = formValidation(inputNombre, parrafoError);
-    let error2 =formValidation(inputEmail, parrafoError);
-    let error3 =formValidation(inputMesage, parrafoError);
-
-    if(error1=== true | error2=== true | error3=== true){
-      console.log('Intento de envio');
-      let formData = new FormData(formulario);
-      fetch("/", {
-        method: "POST",
-        headers: { 
-          "Content-Type": "application/x-www-form-urlencoded" 
-        },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => console.log("Form successfully submitted"))
-        .catch((error) => alert(error));
-    }
-  });
 
   const campoNombre = document.createElement('LABEL');
   campoNombre.className = 'campo__label';
@@ -91,6 +77,10 @@ const Formulario = ()=>{
   parrafoError.style.color = 'red';
 
   formulario.append(campoNombre, campoEmail, campoMesage, parrafoError, buttonEmail);
+  
+  //Envio de datos
+  formulario.addEventListener('submit', () => handleSubmit(event,inputNombre,inputEmail,inputMesage, parrafoError));
+  
   return formulario;
 };
 

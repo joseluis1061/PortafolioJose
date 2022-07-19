@@ -530,6 +530,10 @@ section[id]{
         max-width: 30%;        
     }
 }
+
+.error_text{
+    color: red;
+}
 /*FOOTER*/
 .contactame-container{
     display: flex;
