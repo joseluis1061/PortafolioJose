@@ -47,7 +47,7 @@ const tecnologiasList = [
   {
     type: 'imagen',
     class: 'fa-brands fa-js-square',
-    text: 'JavaScript',
+    text: 'C++',
     alt: 'C++',
     src: c,
   },
