@@ -5,6 +5,9 @@ import batataBit from './assets/img/batataBit.png';
 import blogDeCafe from './assets/img/blogDeCafe.png';
 import pageFreelancer from './assets/img/pageFreelancer.png';
 import yardSale from './assets/img/YardSale.png';
+import pokedesk from './assets/img/pokedesk.png';
+import clonyoutube from './assets/img/clonyoutube.png';
+import portafolioweb from './assets/img/portafolioweb.png';
 
 const initialState = [
   {
@@ -13,6 +16,13 @@ const initialState = [
     description: 'Oraginizador de citas veterinarias puedes agregar pacientes, síntomas y un contacto del paciente',
     urlPage: 'https://laveterinaria.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/citas_veterinaria'
+  },
+  {
+    image: pokedesk, 
+    title: 'Pokedesk App', 
+    description: 'En esta App podras encontrar los Pokemons de esta memoriable serie. Puedes encontrarlo por su nombre o numero. ¿Los recuerdas todos?',
+    urlPage: 'https://bright-haupia-473906.netlify.app/',
+    urlCode: 'https://github.com/joseluis1061/pokedeskreact'
   },
   {
     image: yardSale, 
@@ -36,19 +46,34 @@ const initialState = [
     urlCode: 'https://github.com/joseluis1061/conf-merch'
   },
   {
-    image: blogDeCafe, 
-    title: 'Blog De Café', 
-    description: 'Landing Page diseñada para los amantes de un buen café que quieran saber todos los secretos para su preparación',
-    urlPage: 'https://dulcet-mooncake-c8416a.netlify.app/',
-   urlCode: 'https://github.com/joseluis1061/BlogDeCaffe'
+    image: clonyoutube, 
+    title: 'Clon Youtube', 
+    description: 'En esta landing page inspirada en el diseño de Youtube puedes evaluar el poder de usar las poderosas herramientas Flexbox y Grid',
+    urlPage: 'https://velvety-selkie-f7d20d.netlify.app/',
+    urlCode: 'https://github.com/joseluis1061/clonyoutube'
   },
   {
-    image: pageFreelancer, 
-    title: 'FreeLancerPage', 
-    description: 'Landing Page diseñada para un freeLancer facil de adaptar en diseño e información',
-    urlPage: 'https://portafoliofrontendweb.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/sitioFrelancer'
+    image: portafolioweb, 
+    title: 'Portafolio Web', 
+    description: 'Este es mi portafolio Web. Esta diseñado en base a Java Script Vanilla y renderizando sus compoentes usando manipulación del DOM',
+    urlPage: 'https://portafoliojosezuniga.netlify.app/',
+    urlCode: 'https://github.com/joseluis1061/PortafolioJose'
   },
+  
+  // {
+  //   image: blogDeCafe, 
+  //   title: 'Blog De Café', 
+  //   description: 'Landing Page diseñada para los amantes de un buen café que quieran saber todos los secretos para su preparación',
+  //   urlPage: 'https://dulcet-mooncake-c8416a.netlify.app/',
+  //  urlCode: 'https://github.com/joseluis1061/BlogDeCaffe'
+  // },
+  // {
+  //   image: pageFreelancer, 
+  //   title: 'FreeLancerPage', 
+  //   description: 'Landing Page diseñada para un freeLancer facil de adaptar en diseño e información',
+  //   urlPage: 'https://portafoliofrontendweb.netlify.app/',
+  //   urlCode: 'https://github.com/joseluis1061/sitioFrelancer'
+  // },
   
 
 ]

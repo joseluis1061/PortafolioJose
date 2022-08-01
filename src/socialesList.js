@@ -1,7 +1,7 @@
 const socialesList = [
   {
     type: 'DIV',
-    href :'https://www.linkedin.com/in/joseluis-zuniga/',
+    href :'https://www.linkedin.com/in/joseluis-zuniga1061/',
     iClass: 'fa-brands fa-linkedin',
     text: 'Linkedin'
   },
