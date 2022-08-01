@@ -7,6 +7,7 @@ import pageFreelancer from './assets/img/pageFreelancer.png';
 import yardSale from './assets/img/YardSale.png';
 import pokedesk from './assets/img/pokedesk.png';
 import clonyoutube from './assets/img/clonyoutube.png';
+import planificadorgastos from './assets/img/planificadorgastos.png';
 import portafolioweb from './assets/img/portafolioweb.png';
 
 const initialState = [
@@ -23,6 +24,13 @@ const initialState = [
     description: 'En esta App podras encontrar los Pokemons de esta memoriable serie. Puedes encontrarlo por su nombre o numero. ¿Los recuerdas todos?',
     urlPage: 'https://bright-haupia-473906.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/pokedeskreact'
+  },
+  {
+    image: planificadorgastos, 
+    title: 'Planificador de Gastos', 
+    description: 'Una App pensada para ayudarte a controlar tu presupuestos y gastos. Usando local Storage para no olvidar nunca una de tus cuentas.',
+    urlPage: 'https://willowy-hamster-be1dac.netlify.app/',
+    urlCode: 'https://github.com/joseluis1061/control-gastos'
   },
   {
     image: yardSale, 

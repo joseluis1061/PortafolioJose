@@ -13,6 +13,8 @@ const getSociales = () => {
 
       const socialA = document.createElement('A');
       socialA.href = item.href;
+      console.log('item.href');
+      console.log(item.href);
       socialA.target = '_blank';
       const socialIcon = document.createElement('I');
       socialIcon.className = item.iClass;
