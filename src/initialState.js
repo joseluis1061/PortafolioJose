@@ -23,7 +23,7 @@ const initialState = [
   {
     image: pokedesk, 
     title: 'Pokedesk App', 
-    description: 'Encuentra la información de esta memoriable serie. Usa su nombre o numero. ¿Los recuerdas todos?',
+    description: 'Encuentra la información de esta memoriable serie. Usa su nombre o numero.',
     urlPage: 'https://bright-haupia-473906.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/pokedeskreact',
     skills: 'JavaScript, manejo DOM, Consumo API'
