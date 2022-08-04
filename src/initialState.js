@@ -79,7 +79,7 @@ const initialState = [
   {
     image: portafolioweb, 
     title: 'Portafolio Web', 
-    description: 'Este es mi portafolio Web. Esta diseñado en base a Java Script Vanilla y renderizando sus compoentes usando manipulación del DOM',
+    description: 'Este es mi portafolio Web. Con diseños personales y exclusivos',
     urlPage: 'https://portafoliojosezuniga.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/PortafolioJose',
     skills: 'Responsive/ JavaScript/ DOM'
