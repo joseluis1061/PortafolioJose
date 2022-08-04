@@ -181,8 +181,7 @@ section[id]{
 
 /*MAIN*/
 .main{
-    position: static;
-    top: 0px;    
+    padding-top: 80px;
     scroll-margin-bottom: 220px;
     min-height: 100vh;
 }
