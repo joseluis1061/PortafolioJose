@@ -9,6 +9,7 @@ import pokedesk from './assets/img/pokedesk.png';
 import clonyoutube from './assets/img/clonyoutube.png';
 import planificadorgastos from './assets/img/planificadorgastos.png';
 import portafolioweb from './assets/img/portafolioweb.png';
+import wordle from './assets/img/wordle.png';
 
 const initialState = [
   {
@@ -24,6 +25,13 @@ const initialState = [
     description: 'En esta App podras encontrar los Pokemons de esta memoriable serie. Puedes encontrarlo por su nombre o numero. ¿Los recuerdas todos?',
     urlPage: 'https://bright-haupia-473906.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/pokedeskreact'
+  },
+  {
+    image: wordle, 
+    title: 'Wordle App', 
+    description: 'Este clasico juego pondra a prueba tus concentración y gramatica. Diviértete y entrena tu mente',
+    urlPage: 'https://visionary-blancmange-e764a6.netlify.app/',
+    urlCode: 'https://github.com/joseluis1061/wordle'
   },
   {
     image: planificadorgastos, 
