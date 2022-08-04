@@ -34,7 +34,18 @@ const Main = () =>{
   text = document.createTextNode('I build web apps by meet your dreams');
   legendMain.append(text);
 
-  mainInformation.append(mainImgContainer, h1Title, subtitleMain, legendMain);
+  const cvDiv = document.createElement('DIV');
+  cvDiv.className = 'curriculum_container';
+  cvDiv.innerHTML = `
+  <button class="button button-curriculum">
+    <a href="https://drive.google.com/file/d/18UJfHLl_2vZSYzb8s55pPjEpPBpYslaC/view?usp=sharing" target="_blank">
+      <i class="fa-solid fa-id-card"></i>
+    </a>
+  </button>
+  <p>Curriculum</p>  
+  `;
+  
+  mainInformation.append(mainImgContainer, h1Title, subtitleMain, legendMain, cvDiv);
 
   overlay.append(mainInformation);
 
