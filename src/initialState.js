@@ -31,7 +31,7 @@ const initialState = [
   {
     image: wordle, 
     title: 'Wordle App', 
-    description: 'Este clasico juego pondra a prueba tus concentración y gramatica. Diviértete y entrena tu mente',
+    description: 'Este clasico juego pondra a prueba tus concentración y gramática.',
     urlPage: 'https://visionary-blancmange-e764a6.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/wordle',
     skills: 'JavaScript/ DOM/ APIs/ Vectores'
@@ -71,7 +71,7 @@ const initialState = [
   {
     image: clonyoutube, 
     title: 'Clon Youtube', 
-    description: 'En esta landing page inspirada en el diseño de Youtube puedes evaluar el poder de usar las poderosas herramientas Flexbox y Grid',
+    description: 'Landing page inspirada en Youtube desarrollada usando el poder Flexbox y Grid',
     urlPage: 'https://velvety-selkie-f7d20d.netlify.app/',
     urlCode: 'https://github.com/joseluis1061/clonyoutube',
     skills: 'Responsive/ Grid/ Flexbox'
