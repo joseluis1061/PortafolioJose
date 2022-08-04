@@ -17,63 +17,72 @@ const initialState = [
     title: 'La Veterinaria', 
     description: 'Oraginizador de citas veterinarias puedes agregar pacientes, síntomas y un contacto del paciente',
     urlPage: 'https://laveterinaria.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/citas_veterinaria'
+    urlCode: 'https://github.com/joseluis1061/citas_veterinaria',
+    skills: 'React, LocalStorage, JavaScript'
   },
   {
     image: pokedesk, 
     title: 'Pokedesk App', 
-    description: 'En esta App podras encontrar los Pokemons de esta memoriable serie. Puedes encontrarlo por su nombre o numero. ¿Los recuerdas todos?',
+    description: 'Encuentra la información de esta memoriable serie. Usa su nombre o numero. ¿Los recuerdas todos?',
     urlPage: 'https://bright-haupia-473906.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/pokedeskreact'
+    urlCode: 'https://github.com/joseluis1061/pokedeskreact',
+    skills: 'JavaScript, manejo DOM, Consumo API'
   },
   {
     image: wordle, 
     title: 'Wordle App', 
     description: 'Este clasico juego pondra a prueba tus concentración y gramatica. Diviértete y entrena tu mente',
     urlPage: 'https://visionary-blancmange-e764a6.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/wordle'
+    urlCode: 'https://github.com/joseluis1061/wordle',
+    skills: 'JavaScript/ DOM/ APIs/ Vectores'
   },
   {
     image: planificadorgastos, 
     title: 'Planificador de Gastos', 
-    description: 'Una App pensada para ayudarte a controlar tu presupuestos y gastos. Usando local Storage para no olvidar nunca una de tus cuentas.',
+    description: 'Una App pensada para ayudarte a controlar tu presupuestos y gastos.',
     urlPage: 'https://willowy-hamster-be1dac.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/control-gastos'
+    urlCode: 'https://github.com/joseluis1061/control-gastos',
+    skills: 'React/ LocalStorage/ JavaScript'
   },
   {
     image: yardSale, 
     title: 'Yard Sale', 
-    description: 'Tienda en línea, implementada como una PWA. Puedes agregar productos a tu carrito de compra y eliminarlos si no quieres comprarlo',
+    description: 'Tienda en línea con todas las funcionalidades de un CRUD y geolocalización',
     urlPage: 'https://yard-sale-next-js.vercel.app/',
-    urlCode: 'https://github.com/joseluis1061/YardSaleNextJS'
+    urlCode: 'https://github.com/joseluis1061/YardSaleNextJS',
+    skills: 'React/ APIs/ PWA'
   },
   {
     image: batataBit, 
     title: 'Batata Bit', 
     description: 'Landing Page con diseño para consultar el valor de criptomonedas en líena',
     urlPage: 'https://luminous-gingersnap-397aa2.netlify.app',
-    urlCode: 'https://github.com/joseluis1061/batataBit'
+    urlCode: 'https://github.com/joseluis1061/batataBit',
+    skills: 'HTML/ CSS/ Responsive Design'
   },
   {
     image: confMerge, 
     title: 'Conf Merge', 
     description: 'Tienda en línea donde puedes pagar vía Paypal. De manera facíl podras ver tu geolocalización de llegada de tú producto',
     urlPage: 'https://store-merge.web.app/',
-    urlCode: 'https://github.com/joseluis1061/conf-merch'
+    urlCode: 'https://github.com/joseluis1061/conf-merch',
+    skills: 'React/ Consumo API/ Paypal Geolocalización'
   },
   {
     image: clonyoutube, 
     title: 'Clon Youtube', 
     description: 'En esta landing page inspirada en el diseño de Youtube puedes evaluar el poder de usar las poderosas herramientas Flexbox y Grid',
     urlPage: 'https://velvety-selkie-f7d20d.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/clonyoutube'
+    urlCode: 'https://github.com/joseluis1061/clonyoutube',
+    skills: 'Responsive/ Grid/ Flexbox'
   },
   {
     image: portafolioweb, 
     title: 'Portafolio Web', 
     description: 'Este es mi portafolio Web. Esta diseñado en base a Java Script Vanilla y renderizando sus compoentes usando manipulación del DOM',
     urlPage: 'https://portafoliojosezuniga.netlify.app/',
-    urlCode: 'https://github.com/joseluis1061/PortafolioJose'
+    urlCode: 'https://github.com/joseluis1061/PortafolioJose',
+    skills: 'Responsive/ JavaScript/ DOM'
   },
   
   // {

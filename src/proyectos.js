@@ -35,7 +35,8 @@ function getCards(){
     articleP1.append(textoP1);
   
     const articleP2 = document.createElement('P');
-    const textoP2 = document.createTextNode("Mobile / tablet / laptop")
+    const textoP2 = document.createTextNode(card.skills);
+    //const textoP2 = document.createTextNode("Mobile / tablet / laptop")
     articleP2.append(textoP2);
 
     proyectoEncabezado.append(articleH3, articleP1, articleP2);

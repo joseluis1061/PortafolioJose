@@ -381,6 +381,7 @@ section[id]{
     padding-bottom: 15px;
     width: 100%;
     max-width: 370px;
+    min-height: 650px;
     height: 650px;
     display: flex;
     flex-direction: column;
