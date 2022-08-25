@@ -38,7 +38,7 @@ const Main = () =>{
   cvDiv.className = 'curriculum_container';
   cvDiv.innerHTML = `
   <button class="button button-curriculum">
-    <a href="https://drive.google.com/file/d/18UJfHLl_2vZSYzb8s55pPjEpPBpYslaC/view?usp=sharing" target="_blank">
+    <a href="https://drive.google.com/file/d/1_t4VhAYeLphphgUUZKxkt3aI2EHxnsG3/view?usp=sharing" target="_blank">
       <i class="fa-solid fa-id-card"></i>
     </a>
   </button>
